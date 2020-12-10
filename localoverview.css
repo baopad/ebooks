@@ -1,0 +1,117 @@
+@charset "utf-8"; /* CSS Document */
+#lo-menustates {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: none
+}
+#localoverview {
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 1);
+    display: block;
+    pointer-events: auto;
+}
+#localoverview #lo-content {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding-bottom: 1.25em;
+}
+#localoverview a, #localoverview a:link, #localoverview a:visited, #localoverview a:hover, #localoverview a:active {
+    color: #101010;
+    text-decoration: none;
+}
+#localoverview a:hover, #localoverview a:active {
+    color: #404040;
+    text-decoration: underline;
+}
+#localoverview .lo-header {
+    margin: 0 auto;
+    padding: 0;
+}
+#localoverview .lo-header-case {
+    margin: 0 auto;
+    padding: 0 32px;
+	border-bottom: 1px solid #808080;
+	max-width: 980px;
+}@media only screen and (max-width: 767px) {
+    #localoverview .lo-header-case {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+}
+#localoverview .lo-list {
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+}
+#localoverview .lo-list-case {
+    margin: 0 auto;
+    padding: 0 32px;
+    margin-top: 1em;
+    max-width: 980px;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 200;
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .lo-list-case {
+        padding: 0 16px;
+        flex-direction: column;
+    }
+}
+#localoverview .lo-list-item {
+    margin: 0;
+    border-bottom: 1px solid #808080;
+    padding: 0;
+    min-width: 50%;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .lo-list-item {
+        padding: 0;
+    }
+}
+#localoverview .lo-list-item-case {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    width: 90%;
+    width: calc(100% - 3.2em);
+}
+@media only screen and (max-width: 767px) {
+    #localoverview .lo-list-item-case {
+        width: auto;
+    }
+}
+#localoverview .lo-list-item-img {
+    margin: 0;
+    padding: 0;
+    min-width: 160px;
+	max-width: 320px;
+    height: 96px;
+}
+#localoverview .lo-list-item-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2.25;
+}
+#localoverview .lo-footer {
+    margin: 0 auto;
+    padding: 0;
+}
+#localoverview .lo-footer-case {
+    margin: 0 auto;
+    padding: 0;
+}
