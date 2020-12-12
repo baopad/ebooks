@@ -3,11 +3,11 @@
 /*
 #################################################################################################################
 This is an OPTIONAL configuration file.
-The role of this file is to make updating of "tinyfilemanager.php" easier.
+The role of this file is to make updating of "filemanager.php" easier.
 So you can:
--Feel free to remove completely this file and configure "tinyfilemanager.php" as a single file application.
+-Feel free to remove completely this file and configure "filemanager.php" as a single file application.
 or
--Put inside this file all the static configuration you want and forgot to configure "tinyfilemanager.php".
+-Put inside this file all the static configuration you want and forgot to configure "filemanager.php".
 #################################################################################################################
 */
 
@@ -18,11 +18,11 @@ $use_auth = true;
 
 // Login user name and password
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
-// Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
+// Generate secure password hash - https://https://github.com/baopad/
 $auth_users = array(
-    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW', //admin@123
-	'root' => '$2y$10$QEoFBH6XOeLoudrVXLGyo..BV9hPxU.IYV6HXfktiukCznnCcpvcK', //root
-    'user' => '$2y$10$Fg6Dz8oH9fPoZ2jJan5tZuv6Z4Kp7avtQ9bDfrdRntXtPeiMAZyGO' //12345
+    'root' => '$2y$10$U/cfRkcvu7v4uaaXT3sAPuu3jmcDLEjOTAjOqc3269XM81ysZgtSS', // 
+	'paotung' => '$2y$10$uib9DOA6k4IFBSV5G378TOqHzSq4D5Pzn5lkWVkfnzAiXBNWOzrUu', //
+    'user' => '$2y$10$O7RUNw6VRKRTefH5s2df9efmM.B3g5mcDnaskkIj8mFOGgvUOGK9m' //user
 );
 
 //set application theme

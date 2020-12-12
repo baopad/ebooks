@@ -534,7 +534,7 @@
     },
     {
       "name": "简体中文",
-      "code": "zh-CN",
+      "code": "zh",
       "translation": {
         "AppName": "文件管理器",
         "AppTitle": "文件管理器",
@@ -554,7 +554,7 @@
         "Modified": "修改时间",
         "Owner": "拥有者",
         "Search": "查找",
-        "NewItem": "创建新文件/文件夹",
+        "NewItem": "新建文件/文件夹",
         "Folder": "文件夹",
         "Delete": "删除",
         "CopyTo": "复制到",
