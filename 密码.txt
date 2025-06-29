@@ -1,5 +1,0 @@
-1，默认用户名/密码：admin/admin@123 或者 user/12345两个账号
-2，可以在文件第17-18行修改用户名和密码。
-
-密码是使用这个工具加密的
-https://gitcafe.net/?go=http://www.passwordtool.hu/php5-password-hash-generator
