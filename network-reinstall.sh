@@ -8,6 +8,11 @@ SUBNET=$(ip -o -f inet addr show | awk '/scope global/{sub(/[^.]+\//,"0/",$4);pr
 value=$(( 0xffffffff ^ ((1 << (32 - $SUBNET)) - 1) ))
 NETMASK="$(( (value >> 24) & 0xff )).$(( (value >> 16) & 0xff )).$(( (value >> 8) & 0xff )).$(( value & 0xff ))"
 
+if [ -f /etc/selinux/config ]; then
+	SELinuxStatus=$(sestatus -v | grep "SELinux status:" | grep enabled)
+	[[ "$SELinuxStatus" != "" ]] && setenforce 0
+fi
+
 export tmpVER=''
 export tmpDIST=''
 export tmpWORD=''
