@@ -18,6 +18,8 @@ bash network-reinstall.sh -d 13 -p Pw12345678
 
 curl -fsSL https://github.com/baopad/ebooks/raw/refs/heads/main/network-reinstall.sh | bash
 
+curl -fsSL https://github.com/baopad/ebooks/raw/refs/heads/main/network-reinstall.sh | bash -s -- -d 13 -p Pw12345678
+
 
 #!/bin/sh
 
