@@ -8,7 +8,7 @@ export PATH
 
 export tmpVER=''
 export tmpDIST=''
-export tmpWORD='IdcOffer.com'
+export tmpWORD=''
 export tmpMirror=''
 export Relese=''
 export isMirror='0'
