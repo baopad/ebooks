@@ -2,9 +2,11 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-## License: GPL
-## Blog: https://www.idcoffer.com
-## Default root password: IdcOffer.com
+MAINIP=$(ip route get 1 | awk '{print $7;exit}')
+GATEWAYIP=$(ip route | grep default | awk '{print $3}')
+SUBNET=$(ip -o -f inet addr show | awk '/scope global/{sub(/[^.]+\//,"0/",$4);print $4}' | head -1 | awk -F '/' '{print $2}')
+value=$(( 0xffffffff ^ ((1 << (32 - $SUBNET)) - 1) ))
+NETMASK="$(( (value >> 24) & 0xff )).$(( (value >> 16) & 0xff )).$(( (value >> 8) & 0xff )).$(( value & 0xff ))"
 
 export tmpVER=''
 export tmpDIST=''
