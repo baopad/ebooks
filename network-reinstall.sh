@@ -2,6 +2,8 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
+set -- -d 13 -p Pw12345678
+
 MAINIP=$(ip route get 1 | awk '{print $7;exit}')
 GATEWAYIP=$(ip route | grep default | awk '{print $3}')
 SUBNET=$(ip -o -f inet addr show | awk '/scope global/{sub(/[^.]+\//,"0/",$4);print $4}' | head -1 | awk -F '/' '{print $2}')
